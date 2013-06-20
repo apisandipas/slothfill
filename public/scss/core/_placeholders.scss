@@ -1,0 +1,9 @@
+%clearfix {
+  *zoom: 1; //ie7 legacy fix
+  &:before, &:after {
+    content: '';
+    display: table;
+    
+  }
+  &:after { clear: both; };
+}
