@@ -545,48 +545,59 @@ ul, ol, dd {
   margin-bottom: 0;
 }
 
-/* TODO: 
-
-    --Grids
-    Forms
-    Buttons
-    Navigation
-    Module
-    --Media
-
-*/
-/* line 42, ../scss/style.scss */
-header#top {
-  margin-bottom: 1em;
-  background: #eee;
+/* line 46, ../scss/core/_mixins.scss */
+html, body {
+  height: 100%;
 }
 
-/* line 48, ../scss/style.scss */
-#maincolumn {
-  background: lightblue;
-  display: inline;
-  float: left;
-  width: 72.91667%;
-  margin: 0 1.04167%;
+/* line 48, ../scss/core/_mixins.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -63px;
+}
+/* line 54, ../scss/core/_mixins.scss */
+#root #root_footer {
+  height: 63px;
 }
 
-/* line 52, ../scss/style.scss */
-#sidebar {
-  background: lightgreen;
-  display: inline;
-  float: left;
-  width: 22.91667%;
-  margin: 0 1.04167%;
+/* line 56, ../scss/core/_mixins.scss */
+footer {
+  clear: both;
+  position: relative;
+  height: 63px;
 }
 
-@media screen and (max-width: 720px) {
-  /* line 59, ../scss/style.scss */
-  #maincolumn,
-  #sidebar {
-    display: inline;
-    float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
-    margin-bottom: 1em;
-  }
+/* line 13, ../scss/style.scss */
+a {
+  color: #4a8ec2;
+  text-decoration: none;
+}
+
+/* line 17, ../scss/style.scss */
+h1 {
+  color: #4a8ec2;
+}
+
+/* line 20, ../scss/style.scss */
+header[role="banner"], footer[role="footer"] {
+  background: #111;
+  height: 63px;
+  color: #999;
+  padding-top: 18px;
+  font-family: "Futura", sans-serif;
+}
+
+/* line 27, ../scss/style.scss */
+.inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 31, ../scss/style.scss */
+#main {
+  height: 400px;
+  margin-top: 18px;
 }

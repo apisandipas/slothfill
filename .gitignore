@@ -19,3 +19,4 @@ doc/
 
 .vagrant
 .DS_Store
+.sass*

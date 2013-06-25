@@ -9,3 +9,26 @@
 @import 'core/debug';
 
 @import 'objects/media';
+@include sticky-footer(($base-spacing-unit * 3.5), "#root", "#root_footer", "footer");
+a {
+  color: $primary-brand-color;
+  text-decoration:  none;
+}
+h1 {
+  color: $primary-brand-color;
+}
+header[role="banner"], footer[role="footer"] {
+  background: #111;
+  height: ($base-spacing-unit * 3.5);
+  color: #999;
+  padding-top: $base-spacing-unit;
+  font-family: $brand-face;
+}
+.inner {
+    width: 960px;
+    margin: 0 auto;
+}
+#main {
+  height: 400px;
+  margin-top: $base-spacing-unit;
+}
